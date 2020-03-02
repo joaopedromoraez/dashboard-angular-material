@@ -1,6 +1,10 @@
 {
   "name": "dashboard-angular-material",
   "version": "0.0.0",
+  "description": "Dashboard desenvolvida em Angular, usando Material Designer",
+  "productName": "Dashboard Angular Material Designer",
+  "author": "João Pedro Moraes",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
