@@ -10,7 +10,7 @@ export class StarWarsApiService {
 
   constructor(private http: HttpClient) { }
 
-  listarPersonagens(){
-    return this.http.get(`${this.urlApi}people/`)
+  listarPersonagens(page: number){
+    return this.http.get(`${this.urlApi}people/?page=${page}`);
   }
 }

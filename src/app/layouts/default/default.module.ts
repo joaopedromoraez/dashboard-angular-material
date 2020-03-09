@@ -8,6 +8,10 @@ import { PersonagensComponent } from 'src/app/modules/personagens/personagens.co
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MatSidenavModule, MatDividerModule } from '@angular/material'
 import { StarWarsApiService } from 'src/app/services/star-wars-api.service';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +25,10 @@ import { StarWarsApiService } from 'src/app/services/star-wars-api.service';
     RouterModule,
     SharedModule,
     MatSidenavModule,
-    MatDividerModule
+    MatDividerModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
   ],
   providers: [StarWarsApiService],
 })
