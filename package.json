@@ -12,7 +12,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-gh-pages": "ng build --prod --base-href=/dashboard-angular-material/"
+    "build-gh-pages": "ng build --prod --base-href=/dashboard-angular-material/",
+    "deploy-gh-pages": "git subtree push --prefix docs origin gh-pages"
   },
   "private": true,
   "dependencies": {
