@@ -12,6 +12,10 @@ import { StarWarsApiService } from 'src/app/services/star-wars-api.service';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { DragDropDirective } from 'src/app/modules/file-upload/drag-drop.directive';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -19,8 +23,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     DefaultComponent,
     DashboardComponent,
     PostsComponent,
+    PersonagensComponent,
     FileUploadComponent,
-    PersonagensComponent
+    DragDropDirective
   ],
   imports: [
     CommonModule,
@@ -31,6 +36,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatTableModule,
     MatPaginatorModule,
     MatProgressSpinnerModule,
+    MatCardModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [StarWarsApiService],
 })

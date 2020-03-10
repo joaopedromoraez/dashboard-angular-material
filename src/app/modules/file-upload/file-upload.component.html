@@ -1,1 +1,11 @@
-<p>file-upload works!</p>
+<mat-card class="uploadfilecontainer mat-elevation-z8" (click)="fileInput.click()" appDragDrop (onFileDropped)="uploadFile($event)">
+    <input hidden type="file" #fileInput (change)="uploadFile($event.target.files)">
+    <p class="texto">Arraste & Solte os arquivos ou Click para buscar</p>
+</mat-card>
+
+<mat-card *ngFor="let file of files;let i=index" class="itens mat-elevation-z8">
+    {{ file }}
+        <button class="btn-delete" mat-icon-button (click)="deleteAttachment(i)">
+            <mat-icon color="warn">delete</mat-icon>
+        </button>
+</mat-card>

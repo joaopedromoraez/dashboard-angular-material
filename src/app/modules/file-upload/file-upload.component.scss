@@ -1,0 +1,30 @@
+.uploadfilecontainer {
+    background-image: url("../../../assets/cloud_upload-24px.svg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    height: 200px;
+    margin: 20px auto;
+    border: 5px dotted #3F51B5;
+    border-radius: 10px;
+  }
+  
+  .uploadfilecontainer:hover {
+    cursor: pointer;
+    background-color: #9ecbec !important;
+    opacity: 0.8;
+  }
+
+  .itens {
+      margin-top: 10px;
+  }
+
+  .btn-delete {
+      position: absolute;
+      right: 5px;
+      bottom: 7px;
+  }
+
+  .texto {
+      text-align: center;
+  }
