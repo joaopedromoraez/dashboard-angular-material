@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class StarWarsApiService {
 
-  urlApi: string = 'https://swapi.co/api/';
+  urlApi: string = 'https://swapi.dev/api/';
 
   constructor(private http: HttpClient) { }
 
